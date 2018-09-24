@@ -1,0 +1,272 @@
+.wrapper {
+  display: grid;
+  grid-template: repeat(auto, row minmax(120px, auto)) / repeat(4, col 1fr);
+  grid-column-gap: 10px;
+  width: 100%;
+}
+
+.header1 {
+  grid-column: col 1 / span 4;
+  grid-row: row 1;
+  background-color: #1d6b34;
+}
+
+.header2 {
+  grid-column: col 1 / span 4;
+  grid-row: row 2;
+  background-color: #1d6b34;
+}
+
+.subheader {
+  grid-column: col 1 / span 4;
+  grid-row: row 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-column: col 1 / auto;
+  grid-row: row 1 / span 5;
+  z-index: 3;
+  background-color: rgba(29, 107, 52, 0.7);
+}
+
+.content1 {
+  display: grid;
+  grid-column: col 1 / span 4;
+  grid-row: row 4;
+  grid-gap: 10px;
+  z-index: 1;
+  padding: 5px;
+  grid-template-areas: "boxa boxa boxb boxb" "boxc boxc boxd boxd";
+}
+
+.content2 {
+  display: grid;
+  grid-column: col 1 / span 4;
+  grid-row: row 4;
+  grid-gap: 10px;
+  z-index: 1;
+  padding: 5px;
+  grid-template-areas: "boxa boxa boxb boxb" "boxc boxc boxc boxc" "boxd boxd boxd boxd";
+}
+
+.footer {
+  grid-column: col 1 / span 4;
+  grid-row: row 5;
+  height: 120px;
+  background-color: #1d6b34;
+}
+
+.box.a {
+  grid-area: boxa;
+  padding: 10px;
+}
+
+.box.b {
+  grid-area: boxb;
+  padding: 10px;
+}
+
+.box.c {
+  grid-area: boxc;
+  padding: 10px;
+}
+
+.box.d {
+  grid-area: boxd;
+  padding: 10px;
+}
+
+/* card opmaak */
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+/* einde card opmaak */
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: rgba(29, 107, 52, 0);
+  color: white;
+  font-weight: bold;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: white;
+}
+
+.button.prmt {
+  height: 30px;
+}
+
+.row3,
+.row4,
+.row5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px;
+  border: 1px #1d6b34 solid;
+  padding: 20px;
+}
+
+.row41,
+.row42,
+.row43 {
+  border-left: 6px solid #1d6b34;
+  padding: 20px;
+}
+
+.allewaarden,
+.prmt_text {
+  display: none;
+}
+
+.prmt {
+  width: 100%;
+}
+
+.prmt_box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  margin-top: 5px;
+}
+
+/* ------------------------------- */
+
+.sidebar {
+  display: block;
+}
+
+/*---------------------------*/
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.ui-widget-header {
+  border: none;
+  border-radius: 0px;
+  background: white;
+}
+
+.ui-tabs-nav .ui-state-default {
+  background: transparent;
+  border: none;
+}
+
+.ui-tabs-nav .ui-state-active a {
+  color: #459e00;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* --------------------------------------- */
+
+/* tabel styling, nodig om de witte lijnen te verwijderen  */
+.comp_tabel_kdr table {
+  border-spacing: 0;
+}
+
+.comp_tabel_kpl table {
+  border-spacing: 0;
+}
+
+.comp_tabel_kpl table tbody td span {
+  margin: 2px;
+}
+
+.comp_tabel_kdr table tbody td span {
+  margin: 2px;
+}
+
+/* ---------------------------------------------*/
+
+.row_header1 {
+  margin-bottom: 20px;
+}
+
+.logo1 > img {
+  margin: 10px;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* styling voor header 2 */
+
+.subheader > p {
+  margin-left: 10px;
+}
+
+p {
+  margin: 0px;
+}
+
+/*------------------------------------------------*/
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background-color: #1d6b34;
+}
+
+.uk-navbar-center h2,
+.uk-navbar-nav > li > a {
+  color: white;
+}
+
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a.uk-open,
+.uk-navbar-nav > li > a:focus {
+  color: yellow;
+}
+
+.centreren {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 5px 10px 5px 0;
+}
+
+iframe {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.uk-accordion-title {
+  font-size: 12px;
+}
+
+.comp {
+  padding: 10px;
+}

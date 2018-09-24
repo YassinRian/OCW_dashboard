@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.4/css/uikit.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+<script src="https://cdn.bootcss.com/uikit/3.0.0-rc.3/js/uikit-icons.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+     <!-- Wrapper -->
+    <div class="wrapper">
+        <div class="header1 card card-1">
+            <nav class="row_header1 uk-navbar-container" uk-navbar>
+                <div class="logo1 uk-navbar-left">
+                    <img tabIndex=0 class=image src="https://werknet.denhaag.nl/style%20library/Branding/components/gdh_suitebar/images/gdh_logo.png">
+                </div>
+                <div class="title uk-navbar-center">OCW bedrijfsvoeringsdashboard</div>
+            </nav>
+        </div>
+        <div class="header2 card card-1">
+            <nav class="uk-navbar-container" uk-navbar>
+
+                <div class="uk-navbar-left">
+
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a class="buttonsb uk-navbar-toggle" href="#">
+                                <span uk-navbar-toggle-icon></span>
+                                <span class="uk-margin-small-left">Menu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lasten" href="#">Lasten</a>
+                        </li>
+                        <li>
+                            <a class="baten" href="#">Baten</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="uk-navbar-center">
+                    <h2>Baten</h2>
+                </div>
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a class="username" href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-home fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Export</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li>
+                                        <a class="excel" href="#" onclick="javascript:gCognosViewer.getRV().viewReport('spreadsheetML')">Excel</a>
+                                    </li>
+                                    <li>
+                                        <a class="pdf" href="#">PDF</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+
+
+        <!-- Subheader -->
+        <div class="subheader card card-1">
+            <h4>Selecties</h4>
+            <p class="selectie_jaar"></p>
+            <p class="selectie_kpl"></p>
+            <p class="selectie_kdr"></p>
+        </div>
+        <!-- /Subheader -->
+
+        <!-- Sidebar -->
+        <div class="sidebar card-5">
+            <div class="row1">Filters</div>
+            <div class="row2">
+                <button class="button prmt">Ververs geselecteerde filters</button>
+            </div>
+            <div class="row">
+                <div class="row3">
+                    <div class="notetextJaar" style="display:none">
+                        <div class="uk-alert-danger" uk-alert>
+                            <p>Selecteer een bestaande waarde.</p>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <input id="input_jaar" type="text" required autocomplete="off">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Selecteer Jaar</label>
+                    </div>
+                </div>
+                <div class="row4">
+                    <!-- Accordion KPL -->
+                    <ul uk-accordion>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Apparaat baten org. niveau 1</a>
+                            <div class="uk-accordion-content">
+                                <div class="notetextKPL" style="display:none">
+                                    <div class="uk-alert-danger" uk-alert>
+                                        <p>Selecteer een bestaande waarde.</p>
+                                    </div>
+                                </div>
+                                <div class="row41">
+                                    <div class="group">
+                                        <input id="input_kpl1" type="text" required autocomplete="off">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Selecteer organisatie niveau</label>
+                                    </div>
+                                  <div class="prmt_box"> kpl3 </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Apparaat baten org. niveau 2</a>
+                            <div class="uk-accordion-content">
+                                <div class="notetextKPL" style="display:none">
+                                    <div class="uk-alert-danger" uk-alert>
+                                        <p>Selecteer een bestaande waarde.</p>
+                                    </div>
+                                </div>
+                                <div class="row42">
+                                    <div class="group">
+                                        <input id="input_kpl2" type="text" required autocomplete="off">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Selecteer organisatie niveau</label>
+                                    </div>
+                                  <div class="prmt_box"> kpl3 </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Apparaat baten org. niveau 3</a>
+                            <div class="uk-accordion-content">
+                                <div class="notetextKPL" style="display:none">
+                                    <div class="uk-alert-danger" uk-alert>
+                                        <p>Selecteer een bestaande waarde.</p>
+                                    </div>
+                                </div>
+                                <div class="row43">
+                                    <div class="group">
+                                        <input id="input_kpl3" type="text" required autocomplete="off">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Selecteer organisatie niveau</label>
+                                    </div>
+                                  <div class="prmt_box"> kpl3 </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /Accordion -->
+                </div>
+
+                <div class="row5">
+                    <!-- Accordion KDR -->
+                    <ul uk-accordion>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Programma baten org. niveau 1</a>
+                            <div class="uk-accordion-content">
+                                <div class="notetextKDR" style="display:none">
+                                    <div class="uk-alert-danger" uk-alert>
+                                        <p>Selecteer een bestaande waarde.</p>
+                                    </div>
+                                </div>
+                                <div class="row51">
+                                    <div class="group">
+                                        <input id="input_kdr1" type="text" required autocomplete="off">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Selecteer organistatie niveau</label>
+                                    </div>
+                                  <div class="prmt_box"> kpl3 </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Programma baten org. niveau 2</a>
+                            <div class="uk-accordion-content">
+                                <div class="notetextKDR" style="display:none">
+                                    <div class="uk-alert-danger" uk-alert>
+                                        <p>Selecteer een bestaande waarde.</p>
+                                    </div>
+                                </div>
+                                <div class="row52">
+                                    <div class="group">
+                                        <input id="input_kdr2" type="text" required autocomplete="off">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Selecteer organistatie niveau</label>
+                                    </div>
+                                  <div class="prmt_box"> kpl3 </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Programma baten org. niveau 3</a>
+                            <div class="uk-accordion-content">
+                                <div class="notetextKDR" style="display:none">
+                                    <div class="uk-alert-danger" uk-alert>
+                                        <p>Selecteer een bestaande waarde.</p>
+                                    </div>
+                                </div>
+                                <div class="row53">
+                                    <div class="group">
+                                        <input id="input_kdr3" type="text" required autocomplete="off">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Selecteer organistatie niveau</label>
+                                    </div>
+                                  <div class="prmt_box"> kpl3 </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /Accordion -->
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <!-- Content -->
+        <div class="content content1">
+            <div class="box a card card-1">
+
+                <!-- switcher Uikit -->
+                <ul uk-tab>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-line-chart"></i>Meerjaren absoluut</a>
+                    </li>
+                </ul>
+                <ul class="uk-switcher uk-margin"></ul>
+                <!-- /switcher Uikit -->
+
+            </div>
+            <div class="box b card card-1">
+
+                <!-- switcher Uikit -->
+                <ul uk-tab>
+                    <li>
+                        <a href="#"><i class="fa fa-line-chart"></i>Meerjaren absoluut</a>
+                    </li>
+                </ul>
+                <ul class="uk-switcher uk-margin"></ul>
+                <!-- /switcher Uikit -->
+
+            </div>
+            <div class="box c card card-1" id="test1">
+
+                <!-- switcher Uikit -->
+                <ul uk-tab>
+                    <li>
+                        <a class="lijn" href="#"><i class="fa fa-line-chart"></i>Lijngrafiek</a>
+                    </li>
+                    <li>
+                        <a class="tabel" href="#"><i class="fa fa-table" aria-hidden="true"></i>Tabel</a>
+                    </li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <div class="boxc tab1"></div>
+                    <div class="boxc tab2">
+</div>
+                </ul>
+                <!-- /switcher Uikit -->
+
+            </div>
+
+            <div class="box d card card-1">
+
+                <!-- switcher Uikit -->
+                <ul uk-tab>
+                    <li>
+                        <a class="lijn" href="#"><i class="fa fa-line-chart"></i>Lijngrafiek</a>
+                    </li>
+                    <li>
+                        <a class="tabel" href="#"><i class="fa fa-table" aria-hidden="true"></i>Tabel</a>
+                    </li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <div class="boxd tab1"></div>
+                    <div class="boxd tab2">
+</div>
+                </ul>
+                <!-- /switcher Uikit -->
+
+            </div>
+        </div>
+        <div class="footer">Footer
+        </div>
+    </div>
+    <!-- einde wrapper -->
+</body>
+</html>
