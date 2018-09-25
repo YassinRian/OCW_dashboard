@@ -17,7 +17,7 @@
                 <div class="logo1 uk-navbar-left">
                     <img tabIndex=0 class=image src="https://werknet.denhaag.nl/style%20library/Branding/components/gdh_suitebar/images/gdh_logo.png">
                 </div>
-                <div class="title uk-navbar-center">OCW bedrijfsvoeringsdashboard</div>
+                <div class="title uk-navbar-center">OCW bedrijfsvoeringsdashboard - test</div>
             </nav>
         </div>
         <div class="header2 card card-1">
@@ -63,8 +63,7 @@
                                         <a class="excel" href="#" onclick="javascript:gCognosViewer.getRV().viewReport('spreadsheetML')">Excel</a>
                                     </li>
                                     <li>
-                                        <a class="pdf" href="#">PDF</a>
-                                    </li>
+                                        <a class="pdf" href="#">PDF</a> </li>
                                 </ul>
                             </div>
                         </li>
@@ -92,7 +91,13 @@
                 <button class="button prmt">Ververs geselecteerde filters</button>
             </div>
             <div class="row">
-                <div class="row3">
+            <ul uk-tab>
+                <li><a href="#">Organisatie Niveau's</a></li>
+                <li><a href="#">Projecten</a></li>
+            </ul>
+            <ul class="uk-switcher animation: uk-animation-fade">
+            <li>
+            <div class="row3">
                     <div class="notetextJaar" style="display:none">
                         <div class="uk-alert-danger" uk-alert>
                             <p>Selecteer een bestaande waarde.</p>
@@ -104,11 +109,11 @@
                         <span class="bar"></span>
                         <label>Selecteer Jaar</label>
                     </div>
-                </div>
-                <div class="row4">
-                    <!-- Accordion KPL -->
+            </div>
+            <div class="row4">
+                <!-- Accordion KPL -->
                     <ul uk-accordion>
-                        <li>
+                        <li class="uk-open">
                             <a class="uk-accordion-title" href="#">Apparaat baten org. niveau 1</a>
                             <div class="uk-accordion-content">
                                 <div class="notetextKPL" style="display:none">
@@ -232,8 +237,88 @@
                     </ul>
                     <!-- /Accordion -->
                 </div>
+    </li>
+    <li>
+                    <div class="row3">
+                        <div class="notetextJaar" style="display:none">
+                            <div class="uk-alert-danger" uk-alert>
+                                <p>Selecteer een bestaande waarde.</p>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <input id="input_jaar" type="text" required autocomplete="off">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Selecteer Jaar</label>
+                        </div>
+                    </div>
+                    <div class="row4">
+                        <!-- Accordion KPL -->
+                        <ul uk-accordion>
+                            <li class="uk-open">
+                                <a class="uk-accordion-title" href="#">Apparaat baten org. niveau 1</a>
+                                <div class="uk-accordion-content">
+                                    <div class="notetextKPL" style="display:none">
+                                        <div class="uk-alert-danger" uk-alert>
+                                            <p>Selecteer een bestaande waarde.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row41">
+                                        <div class="group">
+                                            <input id="input_kpl1" type="text" required autocomplete="off">
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Selecteer organisatie niveau</label>
+                                        </div>
+                                        <div class="prmt_box"> kpl344 </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Apparaat baten org. niveau 2</a>
+                                <div class="uk-accordion-content">
+                                    <div class="notetextKPL" style="display:none">
+                                        <div class="uk-alert-danger" uk-alert>
+                                            <p>Selecteer een bestaande waarde.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row42">
+                                        <div class="group">
+                                            <input id="input_kpl2" type="text" required autocomplete="off">
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Selecteer organisatie niveau</label>
+                                        </div>
+                                        <div class="prmt_box"> kpl3 </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Apparaat baten org. niveau 3</a>
+                                <div class="uk-accordion-content">
+                                    <div class="notetextKPL" style="display:none">
+                                        <div class="uk-alert-danger" uk-alert>
+                                            <p>Selecteer een bestaande waarde.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row43">
+                                        <div class="group">
+                                            <input id="input_kpl3" type="text" required autocomplete="off">
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Selecteer organisatie niveau</label>
+                                        </div>
+                                        <div class="prmt_box"> kpl3 </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- /Accordion -->
+                    </div>
+    </li>
+</ul>
             </div>
-        </div>
+                           </div>
         <!-- /Sidebar -->
 
         <!-- Content -->
